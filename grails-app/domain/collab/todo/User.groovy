@@ -5,7 +5,7 @@ class User {
     String firstName
     String lastName
 
-    static hasMany = [todo: Todo, categoria: Category]
+    static hasMany = [todos: Todo, category: Category]
 
     static constraints = {
         userName(blank: false, unique: true)
